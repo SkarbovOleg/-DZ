@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый проект</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 { color: #2c3e50; }
+        p { font-size: 18px; color: #555; }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover { background-color: #2980b9; }
+        .status { color: #27ae60; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🚀 Мой первый проект</h1>
+        <p>Этот сайт создан в рамках обучения JavaScript и Node.js.</p>
+        <p>Статус сервера: <span class="status">ONLINE</span></p>
+        <p>Нажмите на кнопку ниже, чтобы увидеть, как работает JavaScript.</p>
+        <button class="btn" onclick="showMessage()">Нажми меня!</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Привет! JavaScript работает отлично. 🎉");
+        }
+    </script>
+</body>
+</html>
